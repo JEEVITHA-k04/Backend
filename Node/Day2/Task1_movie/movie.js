@@ -1,33 +1,36 @@
-console.log("Scene Start: A village field. Little Nedumaaran is running and playing.");
+import { startingScene, scene1, scene2, scene3, scene4, scene5, innerDream, endScene } from "./scene.js";
+
+
+console.log(`Scene : ${startingScene}`);
 
 setTimeout(() => {
-  console.log("He suddenly hears a loud engine sound from the sky.");
+  console.log(scene1);
 }, 2000);
 
 setTimeout(() => {
-  console.log("He looks up and sees an airplane flying high above.");
+  console.log(scene2);
 }, 4000);
 
 setTimeout(() => {
-  console.log("The plane glides across the sky. Villagers stop and watch.");
+  console.log(scene3);
 }, 6000);
 
 setTimeout(() => {
-  console.log("Little Maara's eyes shine with excitement and wonder.");
+  console.log(scene4);
 }, 8000);
 
 setTimeout(() => {
-  console.log("He stretches his hands in the air as if he wants to touch the plane.");
+  console.log(scene5);
 }, 10000);
 
 let count = 0;
 
 const interval = setInterval(() => {
-  console.log("Little Nedumaaran (inner dream): 'One day, I will fly in that sky.'");
+  console.log("Little Nedumaaran (inner dream):", innerDream);
   count++;
 
   if(count === 3){
     clearInterval(interval);
-    console.log("Scene End: The dream to fly is born.");
+    console.log("Scene End:",endScene);
   }
 }, 2000);
