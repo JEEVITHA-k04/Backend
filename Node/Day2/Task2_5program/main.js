@@ -20,6 +20,11 @@ fs.writeFile("fibonacci.js", fibonacci, (err)=>{
     else console.log(`fibonacci.js created`)
 })
 
+fs.readFile("fibonacci.js", (err)=>{
+    if(err) console.log(err);
+    else console.log(`fibonacci.js is readed`);
+})
+
 //File2 - Factorial 
 const factorial = `
 let num = 5;
@@ -33,6 +38,11 @@ console.log("Factorial:", fact);
 fs.writeFile("factorial.js", factorial, (err) => {
     if(err) console.log(`Error: ${err}`);
     else console.log(`factorial.js created`);
+})
+
+fs.readFile("factorial.js", (err)=>{
+    if(err) console.log(err);
+    else console.log(`factorial.js is readed`);
 })
 
 //File3 - Prime no check
@@ -49,6 +59,12 @@ fs.writeFile("primeNum.js", primeNum, (err)=>{
     if(err) console.log(`Error: ${err}`);
     else console.log(`primeNum.js created`)
 })
+
+fs.readFile("primeNum.js", (err)=>{
+    if(err) console.log(err);
+    else console.log(`primeNum.js is readed`);
+})
+
 //File - 4 Sum of even numbers
 const sumOfEven = `
 let num = 10
@@ -64,6 +80,11 @@ console.log("Sum of even numberts 1 to", n ,"is:",sum);
 fs.writeFile("sumOfEvenNum.js", sumOfEven, (err) =>{
     if (err) console.log(`Error ${err}`);
     else console.log(`sumOfEvenNum.js created`);
+})
+
+fs.readFile("sumOfEvenNum.js", (err)=>{
+    if(err) console.log(err);
+    else console.log(`sumOfEvenNum.js is readed`);
 })
 
 // file5 - palindrome
@@ -88,4 +109,9 @@ fs.writeFile("palindrome.js",palindrome, (err)=>{
     if(err) console.log(`Error ${err}`);
     else console.log(`palindrome.js created`)
 
+})
+
+fs.readFile("palindrome.js", (err)=>{
+    if(err) console.log(err);
+    else console.log(`palindrome.js is readed`);
 })
