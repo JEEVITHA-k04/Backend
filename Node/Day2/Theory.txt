@@ -1,0 +1,37 @@
+
+1. What is synchronous and asynchoronous process
+	
+    Synchoronous Process:
+       • Synchronous process means tasks run step-by-step in order, one after another
+       • The next task starts only after the current task finishes, so the program waits
+       • It creates blocking behaviour - if one task takes time ( like reading a file) everything else stops until it completes
+       • It is easier to understand and predict because the flow is straight and sequential
+       • Mostly used for simpe operatioins where tasks cmoplete quickly and do not involve time-consuming work like netork calls
+
+     Example:
+	console.log("Task 1")
+	console.log("Task 2")
+	console.log("Task 3")
+
+    Asynchoronous Process:
+       • Asynchoronoous process means tasks do not wait for each other to finish and run independently
+       • When a time-taking tasks start, the program continues to the next task while the first one completes in the background
+       • It gives non-blocking behaviour, imporving performance especially for slow operation ike API calls or file reading
+       • It requires event loop, callbacks, promises, or async-await to manage the flow
+       • Mostly used in server-side programming (Node.js) and modern apps where speed and responsiveness are important
+
+     Example:
+	console.log("Task1")
+	setTimeout(() => console.log("Task 2"), 2000)
+	console.log("Task 3")
+
+Difference:
+      Feature	    Synchronous	            Asynchronous
+
+1. Task execution	    One by one	       Parallel / background
+2. Waiting	              Waits for each task	            Does not wait
+3. Blocking	      Blocking	            Non-blocking
+4. Speed	                       Slower	                Faster
+5. Example	              Standing in a queue	    Ordering food and waiting at table
+6. Used in	            Simple small programs	     Network calls, file read, servers
+
