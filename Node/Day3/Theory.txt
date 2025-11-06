@@ -1,0 +1,64 @@
+1. File System
+      Advantages :
+	• Helps perform all file-related tasks like reading, writing, appending and deleting files directly from Node.js
+	• Support both synchronous and asynchronous operation so developers can choose between blocking and non-blocking I/O
+	• Enables dynamic content creation - for example generating log files, reports pr uploading files
+	• Works across different operating systems without needing external tools or libraries
+	• Very useful for server-side file handling like saving user data or serving static content
+
+      Disadvantages :
+	• Synchronous methods can block the main thread, reducing performance in large scale apps
+	• Error handling can be tricky, especially with asynchronous callbacks.
+	• Files can get corrupted or overwritten if not handled carefully.
+	• Reading or writing very large files may cause memory issues.
+	• Not suitable for real-time data processing directly — it only handles stored files.
+
+2. Path
+      Advantages: 
+	• Simplifies working with file and directory paths across different operating systems.
+	• Automatically adjusts to OS-specific separators (/ for Linux/Mac, \\ for Windows).
+	• Provides helpful methods like path.join(), path.resolve(), and path.basename() to avoid manual string operations.
+	• Prevents path errors caused by incorrect directory references.
+	• Useful in projects where you need to build or navigate file structures dynamically.
+
+      Disadvantages : 
+	• Mostly limited to path manipulation only — doesn’t handle file content.
+	• Requires understanding of relative vs. absolute paths to avoid mistakes.
+	• Can become confusing when dealing with nested folders or complex directory trees.
+	• Small changes in paths can lead to “file not found” errors if not handled correctly.
+	• Not very useful alone — usually used with fs or other modules.
+
+3. OS
+      Advantages
+	• Provides important system-level information like CPU, memory, platform, hostname, and uptime.
+	• Useful for writing programs that need to adapt to different operating systems automatically.
+	• Can be used for system monitoring tools or performance-based decisions (like load balancing).
+	• No external installation required — built directly into Node.js.
+	• Helps in debugging and logging by retrieving environmental information.
+
+      Disadvantages
+	• Only gives system info — doesn’t allow modifying or controlling OS settings.
+	• Some functions return complex data structures that need extra formatting.
+	• Not useful in frontend or client-based applications.
+	• Limited control — cannot perform admin-level operations like process management or configurations.
+	• Can give different results on different OS platforms, which requires testing.
+
+4. HTTP
+      Advantages
+	• Allows you to create web servers and handle client requests directly using Node.js.
+	• Enables building REST APIs without using frameworks like Express.
+	• Supports asynchronous handling, so multiple requests can be processed efficiently.
+	• Works perfectly with other modules like fs for sending HTML pages or JSON data.
+	• Lightweight and fast — ideal for learning and small-scale web services.
+
+      Disadvantages
+	• Writing a server manually using only http can be repetitive and time-consuming.
+	• No built-in routing or middleware, which makes complex servers hard to manage.
+	• Requires extra code for things like headers, status codes, and parsing data.
+	• Lacks built-in security features like CSRF or CORS — developers must handle them manually.
+	• For large projects, frameworks like Express are preferred because they simplify development.
+
+INTERVIEW QUESTIONS
+1.What’s the difference between path.join() and path.resolve()?
+    • join() - just merges the paths.
+    • resolve() gives the full absolute path from your current working directory.
