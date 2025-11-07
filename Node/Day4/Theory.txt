@@ -1,0 +1,47 @@
+1. What is Authorization and Authentication ? 
+     Authentication : 
+	• It is the process where a user proves their identity before entering the ssystem
+           Example: 
+	• Login using username + passwor 
+	• OTP verification
+	• FingerPrint /face lock
+	• Google/ Facebook login
+   Authorization:
+	• Decicing what the user can do
+	• It happens after authentication
+          Example:
+	• Admin can delete movies
+	• Normal user can only book movies cant delete
+	• premium users can watch paid movie
+
+     Feature	         Authentication	                             Authorization
+    Purpose	         Confirm identity	          Check permissions
+    Done using	  Password, OTP, Biometrics	          Roles, access rights
+    Happens	               First	                          After authentication
+    Controls	              Login	              What pages/actions user can access
+  Visible to users	      Yes (login page)	                           No (backend rules)
+
+2. Why we connect frontend and backend ?
+	• To share data between the user and server
+	• To keep data secure
+	• To make the app dynamicall and real-time
+	• To manage databases
+	• To separate roles - easier maintenance	
+
+3. what are the interactions we have in frontend ?
+    Frontend interactions:
+	• clicking button
+	• filling forms
+	• navigating pages
+	• viewing data
+	• animations / UI feedback
+    Frontend - Baxkend interactions (data exchange)
+	• user login / signup
+	• fetching data(GET request)
+	• submitting data(POST request)
+	• updating data
+	• deleting data(DELETE request)
+	• error handling/ validation feedback
+
+
+
