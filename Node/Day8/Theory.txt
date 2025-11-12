@@ -1,0 +1,39 @@
+1. What is MongoDB ? 
+ 	• MongoDB is a NoSQL (non-relational) database used to store and manage data in a flexible, document-based format instead of traditional rows and columns like SQL databases (e.g., MySQL).
+	• MongoDB is NOSQL database which means it doeant use tables and rows like SQL databases; instead, it stores data in flxible, JSON - like documents.
+	• Data in MongoDB is stored as documentss inside collections. A collection is like a table, and a document is like a single record (row).
+	• Each document contains key-value pairs (like { name : "gv", age : 21} ) and can have a different structure from other documents in the same collections
+	• it uses BSOM format internally, which allows it to store more data types than normal JSON (like data, number, array, object, etc.,)
+	• schema flexiblity : you dont need to predefine columns or data types - you can easily add new fielda whatever you want
+
+2. What is ORM ?
+	• ORM stands for Object Relational Mapping 
+	• It is a technique that helps developers interact with database using objects instead of writing raw SQL queries
+	• It acts like a bridge between object-oriented programming(like JS, Python or Java) and relational database (like MySQL, PostgreSQL, etc)
+	• ORMs automatically convert your code (object , method, and classes) into SQL queries behind the scenes. This means you dont have to worry about SQL yntax  you just work with your language's onject and method.
+	• Common examples of ORM libraries are:
+	         1. Sequelize for Node.js
+	         2. TypeORM for TypeScript
+	         3. Mongoose (a similar concept for MongoDB, though MongoDB is NoSQL)
+	         4. Hibernate for Java
+	         5. Django ORM for Python
+
+3. Functions in MongoDB
+	1. insertOne() - insert a single document into a collection
+	2. insertMany() - insert multiple documents at once
+	3. find() - retrieves documents from a collection (like SELECT in SQL)
+	4. findOne() - return only the first matching documents
+	5. updateOne() - update a single documents thet matches a condition
+	6. updateMany() - update multiple documents at once
+	7. deleteOne() - delete the first matching documents
+	8. deleteMany() - delete multiple matching documents
+	9. countDocuments() - count the number of documents matching a condition
+	10. sort() - sort the result in ascending or decending order
+	11. limit() - limits the number of documents displayed
+	12. aggregate() - performs complex data operations like grouping, filtering, and summing(used for analytics)
+
+	• Insert data → insertOne(), insertMany()
+	• Read data → find(), findOne()
+	• Update data → updateOne(), updateMany()
+	• Delete data → deleteOne(), deleteMany()
+	• Analyze data → aggregate()
